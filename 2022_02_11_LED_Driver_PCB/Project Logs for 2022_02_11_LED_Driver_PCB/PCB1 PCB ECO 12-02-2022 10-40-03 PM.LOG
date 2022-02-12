@@ -1,0 +1,17 @@
+Added Component: Designator=SB5(RESC2012X60N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/902f9e387b938f871d31120f5fc1d65e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "YAGEO (PHYCOMP)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RC0805FR-070RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "603-RC0805FR-070RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0805FR-070RL?qs=fRxXYNj8ftF6kXqh1XbZJQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC8_2 Pin=SB5-1
+Added Pin To Net: NetName=3V3 Pin=SB5-2
+Added Member To Class: ClassName=main Member=Component C2 C0805C104K5RAC7411
+Added Member To Class: ClassName=main Member=Component C4 08055A4R3CAT2A
+Added Member To Class: ClassName=main Member=Component IC2 BU33SD5WG-TR
+Added Member To Class: ClassName=main Member=Component SB1 RC0805FR-070RL
+Added Member To Class: ClassName=main Member=Component SB4 RC0805FR-070RL
+Added Member To Class: ClassName=main Member=Component SB5 RC0805FR-070RL
