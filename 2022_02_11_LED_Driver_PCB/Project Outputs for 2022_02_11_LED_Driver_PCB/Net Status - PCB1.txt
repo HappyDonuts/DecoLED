@@ -1,0 +1,30 @@
+Net Status Report
+Filename     : D:\Users\javi_\GitHub\LED_Driver_Deco\2022_02_11_LED_Driver_PCB\PCB1.PcbDoc
+Date         : 15/03/2022
+Time         : 1:35:44 PM
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    3V3, Signal Layers Only, 33.8586mm
+    GND, Signal Layers Only, 5.2967mm
+    NRST, Signal Layers Only, 50.5468mm
+    NetC4_2, Signal Layers Only, 9.1268mm
+    NetC5_2, Signal Layers Only, 7.2483mm
+    NetC7_2, Signal Layers Only, 22.653mm
+    NetC9_2, Signal Layers Only, 15.546mm
+    NetCN1_1, Signal Layers Only, 14.6836mm
+    NetIC1_26, Signal Layers Only, 5.5561mm
+    NetIC1_31, Signal Layers Only, 4.7448mm
+    NetIC1_6, Signal Layers Only, 14.6344mm
+    NetIC1_8, Signal Layers Only, 10.7426mm
+    NetIC3_6, Signal Layers Only, 10.3285mm
+    NetIC3_8, Signal Layers Only, 9.3713mm
+    NetJ2_1, Signal Layers Only, 3.4314mm
+    NetLED1_1, Signal Layers Only, 0mm
+    NetR1_1, Signal Layers Only, 0.2mm
+    PWM_A, Signal Layers Only, 17.3331mm
+    PWM_B, Signal Layers Only, 8.3601mm
+    SWCLK, Signal Layers Only, 6.6519mm
+    SWDIO, Signal Layers Only, 5.5618mm
+    VDDA, Signal Layers Only, 8.3934mm
+count : 22

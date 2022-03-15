@@ -1,12 +1,15 @@
 Protel Design System Design Rule Check
 PCB File : D:\Users\javi_\GitHub\LED_Driver_Deco\2022_02_11_LED_Driver_PCB\PCB1.PcbDoc
-Date     : 16/02/2022
-Time     : 2:42:37 PM
+Date     : 15/03/2022
+Time     : 4:20:59 PM
 
 Processing Rule : Clearance Constraint (Gap=0.203mm) (OnLayer('Top Layer')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (HasFootprint('MOUNTING_HOLE_NP')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.203mm) (OnLayer('Bottom Layer')),(All)
