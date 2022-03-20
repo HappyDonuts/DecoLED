@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=3V3 Pin=C6-2
+Removed Pin From Net: NetName=3V3 Pin=C11-2
+Removed Pin From Net: NetName=3V3 Pin=IC3-4
+Removed Pin From Net: NetName=3V3 Pin=IC3-5
+Added Pin To Net: NetName=NetC7_2 Pin=C6-2
+Added Pin To Net: NetName=NetC7_2 Pin=C11-2
+Added Pin To Net: NetName=NetC7_2 Pin=IC3-4
+Added Pin To Net: NetName=NetC7_2 Pin=IC3-5
+Change Net Name : Old Net Name=NetC7_2 New Net Name=5V
+Added Room: Name=main
