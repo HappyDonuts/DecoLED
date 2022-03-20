@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=Project Outputs for 2022_02_11_LED_Driver_PCB
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -131,40 +131,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
-DocumentPath=CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
-DocumentPath=CAMtastic2.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [GeneratedDocument1]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\Design Rule Check - PCB1.html
 DItemRevisionGUID=
@@ -174,79 +140,67 @@ DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\Net Status - PCB1.htm
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument4]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument5]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GM1
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GM13
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GM15
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GP1
 DItemRevisionGUID=
 
-[GeneratedDocument11]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GP2
 DItemRevisionGUID=
 
-[GeneratedDocument12]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument13]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument14]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument15]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument16]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument17]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument18]
-DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument19]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.REP
 DItemRevisionGUID=
 
-[GeneratedDocument20]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for 2022_02_11_LED_Driver_PCB\PCB1.TXT
 DItemRevisionGUID=
 
 [Configuration1]
@@ -296,7 +250,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for 2022_02_11_LED_Driver_PCB
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
