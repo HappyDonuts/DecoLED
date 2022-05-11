@@ -8,6 +8,9 @@
 #include "power_handler.h"
 
 
+RTC_TimeTypeDef sTime;
+RTC_DateTypeDef sDate;
+
 /**
  * @brief  Creates power_handler_t variable
  * @param  *hrtc: RTC peripheral
@@ -55,7 +58,6 @@ void ph_start_RTC_date(power_handle_t* power_handle)
 
 	HAL_RTCEx_BKUPWrite(power_handle->hrtc, RTC_BKP_DR3, N_BURST_MAX);
 }
-
 
 /**
  * @brief  Sets a date and time at which the system will wake up when in stanby mode

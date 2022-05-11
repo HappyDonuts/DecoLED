@@ -33,8 +33,7 @@ typedef struct power_handle_t{
 /**
  * @brief  Private time and date RTC variables
  */
-RTC_TimeTypeDef sTime;
-RTC_DateTypeDef sDate;
+
 
 
 /**
@@ -58,13 +57,6 @@ void power_handle_init(power_handle_t* power_handle, RTC_HandleTypeDef *hrtc);
  * @retval none
  */
 void ph_start_RTC_date(power_handle_t* power_handle);
-
-/**
- * @brief  Prints date and time through UART for logging purposes
- * @param  *power_handle: pointer to power_handle structure
- * @retval none
- */
-void ph_log_RTC_date(power_handle_t* power_handle);
 
 /**
  * @brief  Sets a date and time at which the system will wake up when in standby mode
