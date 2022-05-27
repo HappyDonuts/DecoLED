@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=IC2 Old Footprint=SOT95P280X125-5N New Footprint=SOT65P210X110-5N
+Added Component: Designator=D1(DAN217UMTL)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://uk.rs-online.com/web/p/products/1835297"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ROHM Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RB715UMTL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "755-RB715UMTL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/RB715UMTL?qs=HXFqYaX1Q2wTXMfu8QxCQg%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VDD Pin=D1-2
+Added Pin To Net: NetName=5V Pin=D1-3
+Added Member To Class: ClassName=main Member=Component D1 RB715UMTL
