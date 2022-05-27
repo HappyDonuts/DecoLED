@@ -1,12 +1,15 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc
 Date     : 27/5/2022
-Time     : 8:15:07 PM
+Time     : 8:21:58 PM
 
 Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Top Layer')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (HasFootprint('MOUNTING_HOLE_NP')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Bottom Layer')),(All)
@@ -58,4 +61,4 @@ Rule Violations :0
 Violations Detected : 0
 Waived Violations : 0
 PCB Health Issues : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
