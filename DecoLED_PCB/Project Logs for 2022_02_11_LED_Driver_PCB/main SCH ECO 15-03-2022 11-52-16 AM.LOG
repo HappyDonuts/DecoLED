@@ -1,5 +1,0 @@
-Remove Pin=J1-4 From Net=NRST
-Change Component Footprint: Designator=J1 Old Footprint=5PIN New Footprint=4PIN
-Change Component Comment: Designator=J1 Old Comment=5PIN New Comment=4PIN
-Change Component Comment: Designator=IC1 Old Comment=STM32L031K6T6TR New Comment=STM32L031K6T6
-Change Pin Designator/Name:  Old Designator=J1-5 Old Name=5 New Designator =4 New Name=4

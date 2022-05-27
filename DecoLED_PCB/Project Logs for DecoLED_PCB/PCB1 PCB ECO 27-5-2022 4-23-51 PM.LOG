@@ -1,0 +1,127 @@
+Removed Pin From Net: NetName=NRST Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C12-1
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=GND Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=IC1-16
+Removed Pin From Net: NetName=SWDIO Pin=IC1-23
+Removed Pin From Net: NetName=SWCLK Pin=IC1-24
+Removed Pin From Net: NetName=GND Pin=IC1-32
+Removed Pin From Net: NetName=SWDIO Pin=J1-2
+Removed Pin From Net: NetName=SWCLK Pin=J1-3
+Removed Pin From Net: NetName=NRST Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=LED1-2
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=NetIC1_6 Pin=SB1-2
+Removed Pin From Net: NetName=NRST Pin=SW1-1
+Removed Pin From Net: NetName=NRST Pin=SW1-2
+Removed Pin From Net: NetName=GND Pin=SW1-3
+Removed Pin From Net: NetName=GND Pin=SW1-4
+Removed Pin From Net: NetName=NetIC1_6 Pin=TP2-TP
+Removed Member From Class: ClassName=main Member=C4
+Removed Member From Class: ClassName=main Member=C5
+Removed Member From Class: ClassName=main Member=C12
+Removed Member From Class: ClassName=main Member=C13
+Removed Member From Class: ClassName=main Member=C14
+Removed Member From Class: ClassName=main Member=J1
+Removed Member From Class: ClassName=main Member=L1
+Removed Member From Class: ClassName=main Member=LED1
+Removed Member From Class: ClassName=main Member=R1
+Removed Member From Class: ClassName=main Member=R2
+Removed Member From Class: ClassName=main Member=SB3
+Removed Member From Class: ClassName=main Member=SW1
+Removed Member From Class: ClassName=main Member=X1
+Change Component Footprint: Designator=C2 Old Footprint=CAPC2012X94N New Footprint=CAPC2012X135N
+Change Component Footprint: Designator=IC1 Old Footprint=QFP80P900X900X160-32N New Footprint=SOIC127P600X175-8N
+Change Footprint: Footprint Not Found SOT65P210X110-5N
+Change Component Comment : Designator=IC2 Old Comment=BU33SD5WG-TR New Comment=MIC5366-3.3YC5-TR
+Change Component Comment : Designator=C2 Old Comment=C0805C104K5RAC7411 New Comment=CL21A475KPFNNNE
+Change Component Comment : Designator=IC1 Old Comment=STM32L031K6T6TR New Comment=STM32G031J6M6
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAPC2012X94N"; UniqueID = "\NTJMTSQF" ("\NTJMTSQF")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.35mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CL21A475KPFNNNE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "187-CL21A475KPFNNNE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/885012107015?qs=0KOYDY2FL2%252BNQREZP%252BtVoQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "IC1" ("IC1"); Footprint = "QFP80P900X900X160-32N"; UniqueID = "\MBPLOSRM" ("\MBPLOSRM")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.fr/datasheet/2/389/dm00613879-1799607.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.75mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "STM32G031J6M6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "511-STM32G031J6M6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "IC2" ("IC2"); Footprint = "SOT95P280X125-5N"; UniqueID = "\RAPOFZHG" ("\RAPOFZHG")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "MIC5365-3.3YC5-TR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/mic5365-3.3yc5-tr/microchip-technology?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.fr/datasheet/2/268/MIC5365_6_High_Performance_Single_150mA_LDO_DS2000-2826882.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "MIC5366-3.3YC5-TR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "998-MIC5366-3.3YC5TR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Micrel/MIC5365-33YC5-TR?qs=U6T8BxXiZAXvJj%252BPZ%252B301w%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3.3V/150mA"; VariantName = "[No Variations]"
+Added Component: Designator=CN2(CN_5PIN)
+Added Component: Designator=S1(EVP-BT3G4A000)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PTS815 SJM 250 SMTR LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "C & K COMPONENTS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PTS815 SJM 250 SMTR LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "611-PTS815SJM250SMTR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Y1(ASEKDV-32.768kHz-LC-T)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.fr/datasheet/2/3/ABRC_S_A0012625913_1-2519507.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ABRACON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASEKDV-32.768kHz-LC-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "815-ASEKDV32768KHLCT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "32.768kHz"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NRST Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=SWDIO Pin=CN2-2
+Added Pin To Net: NetName=GND Pin=CN2-3
+Added Pin To Net: NetName=SWCLK Pin=CN2-4
+Added Pin To Net: NetName=NRST Pin=CN2-5
+Added Pin To Net: NetName=GND Pin=IC1-3
+Added Pin To Net: NetName=SWDIO Pin=IC1-7
+Added Pin To Net: NetName=SWCLK Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=NRST Pin=S1-3
+Added Pin To Net: NetName=NRST Pin=S1-4
+Added Pin To Net: NetName=NetIC1_6 Pin=SB2-2
+Added Pin To Net: NetName=NetIC1_6 Pin=TP1-TP
+Added Pin To Net: NetName=GND Pin=Y1-2
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Default
+Added Pin To Net: NetName=NetIC1_1 Pin=IC1-1
+Added Pin To Net: NetName=NetIC1_1 Pin=Y1-3
+Added Net: Name=NetIC1_1
+Added Pin To Net: NetName=NetIC1_5 Pin=IC1-5
+Added Pin To Net: NetName=NetIC1_5 Pin=SB1-2
+Added Pin To Net: NetName=NetIC1_5 Pin=TP2-TP
+Added Net: Name=NetIC1_5
+Added Pin To Net: NetName=VDD Pin=C2-2
+Added Pin To Net: NetName=VDD Pin=C3-2
+Added Pin To Net: NetName=VDD Pin=CN2-1
+Added Pin To Net: NetName=VDD Pin=IC1-2
+Added Pin To Net: NetName=VDD Pin=SB5-2
+Added Pin To Net: NetName=VDD Pin=Y1-1
+Added Pin To Net: NetName=VDD Pin=Y1-4
+Added Net: Name=VDD
+Added Member To Class: ClassName=main Member=Component CN2 CN_5PIN
+Added Member To Class: ClassName=main Member=Component S1 PTS815_SJM_250_SMTR_LFS
+Added Member To Class: ClassName=main Member=Component Y1 ASEKDV-32.768kHz-LC-T
+Added Room: Name=main
