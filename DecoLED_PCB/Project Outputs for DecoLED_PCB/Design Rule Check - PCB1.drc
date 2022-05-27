@@ -1,0 +1,89 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc
+Date     : 27/5/2022
+Time     : 7:35:24 PM
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: Abstract polygon ID On Top Copper
+   Polygon named: Abstract polygon ID On Top Copper
+
+Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Top Layer')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Bottom Layer')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad C10-1(1066.693mil,670mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C1-1(623.307mil,430mil) on Top Copper [Unplated] And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C1-1(623.307mil,430mil) on Top Copper [Unplated] And Pad C3-1(840mil,346.693mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad IC3-7(595mil,679.291mil) on Top Copper [Unplated] And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad S1-2(449.449mil,518.583mil) on Top Copper And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C3-1(840mil,346.693mil) on Top Copper [Unplated] And Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad CN2-3(920mil,190mil) on Multi-Layer And Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] And Pad Y1-2(1080mil,426.614mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C6-1(346.693mil,960mil) on Top Copper [Unplated] And Pad IC3-1(645mil,900.709mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C8-1(910mil,856.693mil) on Top Copper [Unplated] And Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] And Pad CN1-9(1005.472mil,1065.669mil) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] And Pad IC2-2(1140mil,879.055mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad IC1-3(960.709mil,625mil) on Top Copper [Unplated] And Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad TP5-TP(1380mil,530mil) on Top Copper 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad Y1-2(1080mil,426.614mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad CN1-6(814.528mil,1065.669mil) on Multi-Layer And Pad CN1-5(858.819mil,1057.795mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad IC3-7(595mil,679.291mil) on Top Copper [Unplated] And Pad IC3-1(645mil,900.709mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad S1-1(130.551mil,518.583mil) on Top Copper And Pad S1-2(449.449mil,518.583mil) on Top Copper 
+   Violation between Un-Routed Net Constraint: Net VDD Between Pad Y1-4(1017.008mil,340mil) on Top Copper [Unplated] And Pad Y1-1(1080mil,340mil) on Top Copper [Unplated] 
+   Violation between Un-Routed Net Constraint: Net VDD Between Pad Y1-4(1017.008mil,340mil) on Top Copper [Unplated] And Via (1030mil,510mil) from Top Copper to Bottom Copper 
+   Violation between Un-Routed Net Constraint: Polygon Not Repour After Edit  () on Bottom Copper Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Polygon Not Repour After Edit  () on Top Copper Dead Copper - Net Not Assigned.
+Rule Violations :22
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Not Repour After Edit  () on Bottom Copper 
+   Violation between Modified Polygon: Polygon Not Repour After Edit  () on Top Copper 
+Rule Violations :2
+
+Processing Rule : Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=3mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=3.937mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3.937mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 24
+Waived Violations : 0
+PCB Health Issues : 0
+Time Elapsed        : 00:00:01

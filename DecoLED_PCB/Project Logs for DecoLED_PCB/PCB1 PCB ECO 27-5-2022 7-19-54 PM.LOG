@@ -1,0 +1,16 @@
+Change Physical Footprint: Designator=C1 Old Footprint=CAPC2012X94N New Footprint=CAPC2012X94N
+Change Physical Footprint: Designator=C2 Old Footprint=CAPC2012X135N New Footprint=CAPC2012X135N
+Change Physical Footprint: Designator=C3 Old Footprint=CAPC2012X94N New Footprint=CAPC2012X94N
+Change Physical Footprint: Designator=CN2 Old Footprint=CN_5PIN New Footprint=CN_5PIN
+Change Physical Footprint: Designator=IC1 Old Footprint=SOIC127P600X175-8N New Footprint=SOIC127P600X175-8N
+Change Physical Footprint: Designator=MH1 Old Footprint=MOUNTING_HOLE_NP New Footprint=MOUNTING_HOLE_NP
+Change Physical Footprint: Designator=MH2 Old Footprint=MOUNTING_HOLE_NP New Footprint=MOUNTING_HOLE_NP
+Change Physical Footprint: Designator=MH3 Old Footprint=MOUNTING_HOLE_NP New Footprint=MOUNTING_HOLE_NP
+Change Physical Footprint: Designator=MH4 Old Footprint=MOUNTING_HOLE_NP New Footprint=MOUNTING_HOLE_NP
+Change Physical Footprint: Designator=S1 Old Footprint=EVP-BT3G4A000 New Footprint=EVP-BT3G4A000
+Change Physical Footprint: Designator=TP1 Old Footprint=TEST_POINT New Footprint=TEST_POINT
+Change Physical Footprint: Designator=TP2 Old Footprint=TEST_POINT New Footprint=TEST_POINT
+Change Physical Footprint: Designator=TP3 Old Footprint=TEST_POINT New Footprint=TEST_POINT
+Change Physical Footprint: Designator=TP4 Old Footprint=TEST_POINT New Footprint=TEST_POINT
+Change Physical Footprint: Designator=TP5 Old Footprint=TEST_POINT New Footprint=TEST_POINT
+Change Physical Footprint: Designator=Y1 Old Footprint=ASEKDV-32.768kHz-LC-T New Footprint=ASEKDV-32.768kHz-LC-T

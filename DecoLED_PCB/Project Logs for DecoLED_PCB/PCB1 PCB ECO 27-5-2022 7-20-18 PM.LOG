@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=SWDIO Pin=CN2-2
+Removed Pin From Net: NetName=SWCLK Pin=CN2-4
+Change Footprint: Footprint Not Found SOT65P210X110-5N
+Add Component: Footprint Not Found USB307530A
+Add Pin To Net: Unknown Pin: Pin CN1-1
+Add Pin To Net: Unknown Pin: Pin CN1-5
+Add Pin To Net: Unknown Pin: Pin CN1-6
+Add Pin To Net: Unknown Pin: Pin CN1-7
+Add Pin To Net: Unknown Pin: Pin CN1-8
+Add Pin To Net: Unknown Pin: Pin CN1-9
+Added Pin To Net: NetName=SWCLK Pin=CN2-2
+Added Pin To Net: NetName=SWDIO Pin=CN2-4
+Add Class Member: Failed to add class member : Component CN1 920-E52A2021S10100
+Added Room: Name=main

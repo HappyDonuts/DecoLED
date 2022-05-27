@@ -1,0 +1,434 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">27/5/2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7:35:24 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc" class="file"><acronym title="C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc">C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">2</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">24</td></tr>
+</table>
+</td>
+</table><a name="ID5FJGOU4XYWI3PYTDLA115D102IEO4UPUQ0U2XSMAO0XNV3Q1DCHJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKBT5K3XMKEOWNL3BQ0DIN1B23QNHMZQED0SK4XZE2UEEYNSJMI">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</a></td>
+<td class="column2">2</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">2</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGSE1GSIA5RO4JZDNMCC53HK4AMWKMX2EKJ3BXDHEZCLTOCDNJJPH">Clearance Constraint (Gap=8mil) (OnLayer('Top Layer')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGTNZ3GL2EGFSL2VESGHHTWBI2BPBFWFR31YGOGOOYIFLDMGBOHDP">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5JRJY5WOGEXQOLQNR0GFCRQMPIQ5ZK4XZ5FYOLKHLA0OS25EBSHK">Clearance Constraint (Gap=8mil) (OnLayer('Bottom Layer')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOMRW1U52TYNHIN4HZFR20JVW2JIGLMUFYSMCN4KYNU2YC1MI3VQL">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWWDRQMK0301MD0PSLCL1TX55JKQHEQ0KYZXWSXJDWXF00W0M0MF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">22</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1R3MTUV4LTCLBHENBRRLDTXT0MH0UCAG53UOUJMOP3JD4AWDNE2P">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUVNWGBGHGCOAOZSP5K55BHTW5CXO5JYYK4Y1D3DQU3A2SMMJYSMC">Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=15mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHGX3HAQZ0VHCLKNQCNZDJCL0OWHPMCKW22XSKLVNM0YIJF2OTUH">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDY220FW10OUT3IFQAS4DBYV524ISOSVZ03WZRP4IE132D1YWDIHVJ">Minimum Annular Ring (Minimum=3mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAPCSV3YH1CPYFOOVSGPR2NXIMB0A2VSR4CQJKBEJF1BDUGG2QCDB">Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFR33WBVFIKWVMDFGF2WR4PLGANNYCKF3F1DY2PH0RF5QK2TEHMUP">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5EO2DLIDQ0CALRSVDQ1GBLZDYCY1CIRZBN3N2CKZ3LPZDTIYNPOI">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXYC1U0CHXJRRP2JYLSTPMQP44I3LH1I4VFED5ZQQRN3OT3OANTN">Silk To Solder Mask (Clearance=3.937mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLPH1HMPAYC3RGZ5IENDCJNM1DRMQQ2THPSVENB3YV3II3PDKBSD">Silk to Silk (Clearance=3.937mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO4YMLU4K4FWODW5GZN0ZC5MZ33EKCVVGXLKOFKVV2HTYZ2KYUPM">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTZZOP4LLV5URHP33ONUMSW3HOJYFXPE3TIOTVEL5QP5TAFC5JUK">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZAIJSMQYUDHWFEMHYE3XHBDZ3ENFJOT0ZZWP2KNL1MEGEDK4KGH">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table><br><a name="IDXNRHLPOYAHF5FZVDZMEV2YXEAEVVYCYARHRDFYNMZI5AA50A0KPI"><h2>Warnings</h2></a><a name="IDKBT5K3XMKEOWNL3BQ0DIN1B23QNHMZQED0SK4XZE2UEEYNSJMI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Abstract polygon ID On Top Copper</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Abstract polygon ID On Top Copper</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWWDRQMK0301MD0PSLCL1TX55JKQHEQ0KYZXWSXJDWXF00W0M0MF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=1873.291mil|Location1.Y=1889.858mil|Location2.Y=2032.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=1873.291mil|Location1.Y=1889.858mil|Location2.Y=2032.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad C10-1(1066.693mil,670mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1374.661mil|Location2.X=1429.906mil|Location1.Y=1729.858mil|Location2.Y=1932.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1374.661mil|Location2.X=1429.906mil|Location1.Y=1729.858mil|Location2.Y=1932.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-1(623.307mil,430mil) on Top Copper [Unplated] And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1374.661mil|Location2.X=1650.535mil|Location1.Y=1650.488mil|Location2.Y=1792.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1374.661mil|Location2.X=1650.535mil|Location1.Y=1650.488mil|Location2.Y=1792.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-1(623.307mil,430mil) on Top Copper [Unplated] And Pad C3-1(840mil,346.693mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1357.181mil|Location2.X=1429.906mil|Location1.Y=1869.858mil|Location2.Y=2048.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1357.181mil|Location2.X=1429.906mil|Location1.Y=1869.858mil|Location2.Y=2048.665mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad IC3-7(595mil,679.291mil) on Top Copper [Unplated] And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1190.961mil|Location2.X=1429.906mil|Location1.Y=1818.441mil|Location2.Y=1932.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1190.961mil|Location2.X=1429.906mil|Location1.Y=1818.441mil|Location2.Y=1932.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad S1-2(449.449mil,518.583mil) on Top Copper And Pad C11-1(623.307mil,570mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1587.417mil|Location2.X=1730.535mil|Location1.Y=1650.488mil|Location2.Y=1705.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1587.417mil|Location2.X=1730.535mil|Location1.Y=1650.488mil|Location2.Y=1705.732mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3-1(840mil,346.693mil) on Top Copper [Unplated] And Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1651.26mil|Location2.X=1746.693mil|Location1.Y=1473.701mil|Location2.Y=1705.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1651.26mil|Location2.X=1746.693mil|Location1.Y=1473.701mil|Location2.Y=1705.732mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad CN2-3(920mil,190mil) on Multi-Layer And Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.417mil|Location2.X=1886.598mil|Location1.Y=1650.488mil|Location2.Y=1789.591mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.417mil|Location2.X=1886.598mil|Location1.Y=1650.488mil|Location2.Y=1789.591mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2-1(920mil,346.693mil) on Top Copper [Unplated] And Pad Y1-2(1080mil,426.614mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1098.047mil|Location2.X=1440.772mil|Location1.Y=2194.169mil|Location2.Y=2322.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1098.047mil|Location2.X=1440.772mil|Location1.Y=2194.169mil|Location2.Y=2322.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C6-1(346.693mil,960mil) on Top Copper [Unplated] And Pad IC3-1(645mil,900.709mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1657.417mil|Location2.X=1800.535mil|Location1.Y=2160.488mil|Location2.Y=2215.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1657.417mil|Location2.X=1800.535mil|Location1.Y=2160.488mil|Location2.Y=2215.732mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C8-1(910mil,856.693mil) on Top Copper [Unplated] And Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1737.417mil|Location2.X=1828.228mil|Location1.Y=2160.488mil|Location2.Y=2440.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1737.417mil|Location2.X=1828.228mil|Location1.Y=2160.488mil|Location2.Y=2440.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] And Pad CN1-9(1005.472mil,1065.669mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1737.417mil|Location2.X=1934.787mil|Location1.Y=2160.488mil|Location2.Y=2236.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1737.417mil|Location2.X=1934.787mil|Location1.Y=2160.488mil|Location2.Y=2236.126mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C7-1(990mil,856.693mil) on Top Copper [Unplated] And Pad IC2-2(1140mil,879.055mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1701.728mil|Location2.X=1873.291mil|Location1.Y=1889.858mil|Location2.Y=1973.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1701.728mil|Location2.X=1873.291mil|Location1.Y=1889.858mil|Location2.Y=1973.213mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad IC1-3(960.709mil,625mil) on Top Copper [Unplated] And Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=2192.976mil|Location1.Y=1827.417mil|Location2.Y=1952.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=2192.976mil|Location1.Y=1827.417mil|Location2.Y=1952.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad TP5-TP(1380mil,530mil) on Top Copper </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=1886.598mil|Location1.Y=1726.473mil|Location2.Y=1952.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.047mil|Location2.X=1886.598mil|Location1.Y=1726.473mil|Location2.Y=1952.976mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-1(1066.693mil,590mil) on Top Copper [Unplated] And Pad Y1-2(1080mil,426.614mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1549.725mil|Location2.X=1650.591mil|Location1.Y=2348.858mil|Location2.Y=2440.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1549.725mil|Location2.X=1650.591mil|Location1.Y=2348.858mil|Location2.Y=2440.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad CN1-6(814.528mil,1065.669mil) on Multi-Layer And Pad CN1-5(858.819mil,1057.795mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1357.181mil|Location2.X=1440.772mil|Location1.Y=1972.752mil|Location2.Y=2270.083mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1357.181mil|Location2.X=1440.772mil|Location1.Y=1972.752mil|Location2.Y=2270.083mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad IC3-7(595mil,679.291mil) on Top Copper [Unplated] And Pad IC3-1(645mil,900.709mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=872.063mil|Location2.X=1265.89mil|Location1.Y=1818.441mil|Location2.Y=1881.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=872.063mil|Location2.X=1265.89mil|Location1.Y=1818.441mil|Location2.Y=1881.559mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad S1-1(130.551mil,518.583mil) on Top Copper And Pad S1-2(449.449mil,518.583mil) on Top Copper </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1768.362mil|Location2.X=1886.598mil|Location1.Y=1639.858mil|Location2.Y=1702.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1768.362mil|Location2.X=1886.598mil|Location1.Y=1639.858mil|Location2.Y=1702.976mil|Absolute=True">Un-Routed Net Constraint: Net VDD Between Pad Y1-4(1017.008mil,340mil) on Top Copper [Unplated] And Pad Y1-1(1080mil,340mil) on Top Copper [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1768.362mil|Location2.X=1832.913mil|Location1.Y=1639.858mil|Location2.Y=1865.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1768.362mil|Location2.X=1832.913mil|Location1.Y=1639.858mil|Location2.Y=1865.354mil|Absolute=True">Un-Routed Net Constraint: Net VDD Between Pad Y1-4(1017.008mil,340mil) on Top Copper [Unplated] And Via (1030mil,510mil) from Top Copper to Bottom Copper </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2528.976mil|Location2.X=4008.976mil|Location1.Y=551.417mil|Location2.Y=1791.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2528.976mil|Location2.X=4008.976mil|Location1.Y=551.417mil|Location2.Y=1791.417mil|Absolute=True">Un-Routed Net Constraint: Polygon Not Repour After Edit  () on Bottom Copper Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2408.976mil|Location2.X=3888.976mil|Location1.Y=2051.417mil|Location2.Y=3291.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2408.976mil|Location2.X=3888.976mil|Location1.Y=2051.417mil|Location2.Y=3291.417mil|Absolute=True">Un-Routed Net Constraint: Polygon Not Repour After Edit  () on Top Copper Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1R3MTUV4LTCLBHENBRRLDTXT0MH0UCAG53UOUJMOP3JD4AWDNE2P"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Modified Polygon (Allow modified: No), (Allow shelved: No)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2528.976mil|Location2.X=4008.976mil|Location1.Y=551.417mil|Location2.Y=1791.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2528.976mil|Location2.X=4008.976mil|Location1.Y=551.417mil|Location2.Y=1791.417mil|Absolute=True">Modified Polygon: Polygon Not Repour After Edit  () on Bottom Copper </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2408.976mil|Location2.X=3888.976mil|Location1.Y=2051.417mil|Location2.Y=3291.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\javi_\GitHub\LED_Driver_Deco\DecoLED_PCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2408.976mil|Location2.X=3888.976mil|Location1.Y=2051.417mil|Location2.Y=3291.417mil|Absolute=True">Modified Polygon: Polygon Not Repour After Edit  () on Top Copper </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
