@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: PCB1.GBR   28/5/2022  12:34:51 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTO                Top Overlay                             
+.GTS                Top Mask                                
+.GTL                Top Copper                              
+.GP1                GND Layer                               
+.GP2                PWR Layer                               
+.GBL                Bottom Copper                           
+.GBS                Bottom Mask                             
+.GBO                Bottom Overlay                          
+.GM1                Mechanical 1                            
+.GM2                Board Shape                             
+.GM13               Mechanical 13                           
+.GM15               Mechanical 15                           
+.GKO                Keep-Out Layer                          
+.GPT                Top Pad Master                          
+.GPB                Bottom Pad Master                       
+------------------------------------------------------------------------------------------

@@ -1,9 +1,0 @@
-MCU:	STM32L031K6T6 (mouser)
-Driver: mp6513 (farnell)
-		TB67H450FNG,EL (mouser)
-LDO:	BU33SD5WG-TR (mouser)
-0ohm:	RC0805FR-070RL (mouser)
-Xtal:	ABS07-32.768KHZ-9-T (mouser)
-Bead:	742792030 (mouser)
-Switch: EVP-BT3G4A000
-LED:	APT2012LZGCK
